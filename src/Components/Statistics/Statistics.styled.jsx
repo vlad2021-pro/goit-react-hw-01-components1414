@@ -34,19 +34,19 @@ export const StatItem = styled.li`
   align-items: center;
   width: calc(100% / 5);
   padding: 15px 0;
-  &:nth-child(1) {
+  &:nth-of-type(1) {
     background-color: #39aff3;
   }
-  &:nth-child(2) {
+  &:nth-of-type(2) {
     background-color: #800080;
   }
-  &:nth-child(3) {
+  &:nth-of-type(3) {
     background-color: #ffc0cb ;
   }
-  &:nth-child(4) {
+  &:nth-of-type(4) {
     background-color: #1da747;
   }
-  &:nth-child(5) {
+  &:nth-of-type(5) {
     background-color: #f06c38;
   }
 `;

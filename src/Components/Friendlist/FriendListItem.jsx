@@ -7,7 +7,7 @@ const FriendListItem = ({avatar, name, isOnline, id}) => {
         <FriendCase>
             <FriendItem key={id}>
                 
-  <FriendStatus>{isOnline}</FriendStatus>
+  <FriendStatus isOnline={isOnline}>{isOnline}</FriendStatus>
   <FriendAvatar src={avatar} alt="User avatar" width="48" />
                 <FriendName> {name}</FriendName>
 </FriendItem>

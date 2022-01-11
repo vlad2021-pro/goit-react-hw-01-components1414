@@ -55,7 +55,7 @@ color:black;
 `
 export const StatsList = styled.li`
  
- &:not(:first-child) {
+ &:not(:first-of-type) {
     border-left: 2px solid rgba(99, 96, 96, 0.1);
   }
   text-align: center;

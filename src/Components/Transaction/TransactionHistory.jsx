@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import {TransactionListHistory, TransactionHeader, TransactionString, TransactionHeaderCase, TransactionColumn} from '../Transaction/Transaction.styled'
 
 
 
@@ -7,24 +8,24 @@ import PropTypes from 'prop-types';
 const TransactionHistory =({items}) => {
     return (
         <div>
-            <table className="transaction-history">
+            <TransactionListHistory>
   <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
+    <TransactionHeader>
+      <TransactionHeaderCase>Type</TransactionHeaderCase>
+      <TransactionHeaderCase>Amount</TransactionHeaderCase>
+      <TransactionHeaderCase>Currency</TransactionHeaderCase>
+    </TransactionHeader>
   </thead>
 
-                <tbody>
+                <TransactionColumn>
             {items.map(({ id, type, amount, currency}) => (
     <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <TransactionString>{type}</TransactionString>
+      <TransactionString>{amount}</TransactionString>
+      <TransactionString>{currency}</TransactionString>
             </tr> ))}
-          </tbody>
-         </table> 
+          </TransactionColumn>
+         </TransactionListHistory> 
         </div>
     )
 }
